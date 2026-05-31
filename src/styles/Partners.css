@@ -1,0 +1,168 @@
+.partners{
+
+  position:relative;
+
+  padding:
+  110px 0;
+
+  overflow:hidden;
+
+  background:#F4F0EA;
+}
+
+/* SOFT LIGHT */
+
+.partners::before{
+
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  background:
+  radial-gradient(
+    circle at 20% 50%,
+    rgba(214,166,107,.06),
+    transparent 42%
+  );
+
+  opacity:.9;
+}
+
+.partners h2{
+
+  position:relative;
+
+  z-index:2;
+
+  text-align:center;
+
+  color: navy;
+
+  font-size:1.5rem;
+
+  font-weight:700;
+
+  margin-bottom:70px;
+}
+
+/* TRACK */
+
+.logo-track{
+
+  overflow:hidden;
+
+  position:relative;
+  z-index:2;
+}
+
+/* CONTINUOUS MOTION */
+
+.logo-slide{
+
+  display:flex;
+  align-items:center;
+
+  width:max-content;
+
+  animation:
+  moveLogos 16s linear infinite;
+}
+
+/* JUST PNG */
+
+.logo-card{
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin:0 55px;
+
+  transition:.45s;
+}
+
+/* PNG LOGO */
+
+.logo-card img{
+
+  height:80px;
+  width:auto;
+
+  object-fit:contain;
+
+  transition:.45s;
+
+  filter:
+  brightness(1.04)
+  drop-shadow(
+    0 8px 18px
+    rgba(0,0,0,.22)
+  );
+}
+
+.logo-card:hover img{
+
+  transform:
+  scale(1.08);
+
+  filter:
+  brightness(1.1)
+  drop-shadow(
+    0 12px 28px
+    rgba(214,166,107,.18)
+  );
+}
+
+/* MOTION */
+
+@keyframes moveLogos{
+
+  from{
+    transform:
+    translateX(0);
+  }
+
+  to{
+    transform:
+    translateX(-33.33%);
+  }
+
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+.logo-card img{
+  height:88px;
+}
+
+.partners h2{
+  font-size:2.4rem;
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.logo-slide{
+  animation:
+  moveLogos 12s linear infinite;
+}
+
+.logo-card{
+  margin:0 30px;
+}
+
+.logo-card img{
+  height:68px;
+}
+
+.partners h2{
+  font-size:1.5rem;
+}
+
+}
