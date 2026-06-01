@@ -1,0 +1,179 @@
+.cta{
+  position:relative;
+  overflow:hidden;
+
+  padding:90px 7%;
+
+  background:
+  linear-gradient(
+    rgba(7,22,45,.55),
+    rgba(7,22,45,.55)
+  ),
+  url("/cta-bg.jpg");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+/* OVERLAY */
+
+.cta-overlay{
+  position:absolute;
+  inset:0;
+
+  background:
+  linear-gradient(
+    135deg,
+    rgba(7,22,45,.30),
+    rgba(0,0,0,.15)
+  );
+
+  z-index:1;
+}
+
+/* CONTENT */
+
+.cta-content{
+  position:relative;
+  z-index:2;
+
+  max-width:1100px;
+  margin:auto;
+  text-align:center;
+}
+
+/* TAG */
+
+.cta-tag{
+  color:#d5a567;
+  letter-spacing:6px;
+  font-size:.82rem;
+  text-transform:uppercase;
+
+  margin-bottom:18px;
+}
+
+/* TITLE */
+
+.cta-content h2{
+  color:white;
+
+  font-size:
+  clamp(2.4rem,5vw,4rem);
+
+  margin-bottom:18px;
+
+  font-weight:700;
+}
+
+/* TEXT */
+
+.cta-text{
+  color:
+  rgba(255,255,255,.88);
+
+  font-size:1.08rem;
+  line-height:1.8;
+
+  margin-bottom:38px;
+}
+
+/* BUTTON ROW */
+
+.cta-buttons{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+/* BUTTON */
+
+.cta-btn{
+  border:none;
+  outline:none;
+
+  padding:18px 36px;
+  border-radius:14px;
+
+  font-size:1rem;
+  font-weight:600;
+
+  cursor:pointer;
+  transition:.35s;
+}
+
+/* EMAIL */
+
+.email{
+  background:#084b95;
+  color:white;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+  background:#06b33f;
+  color:white;
+}
+
+/* TEAM */
+
+.team{
+  background:#f4c400;
+  color:#111;
+}
+
+/* HOVER */
+
+.cta-btn:hover{
+  transform:translateY(-4px);
+
+  box-shadow:
+  0 14px 32px
+  rgba(0,0,0,.28);
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+.cta{
+  padding:75px 6%;
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:650px){
+
+.cta{
+  padding:65px 5%;
+}
+
+.cta-tag{
+  letter-spacing:4px;
+  font-size:.72rem;
+}
+
+.cta-content h2{
+  font-size:
+  clamp(2rem,8vw,3rem);
+}
+
+.cta-text{
+  font-size:.95rem;
+}
+
+.cta-buttons{
+  flex-direction:column;
+}
+
+.cta-btn{
+  width:100%;
+  padding:16px 22px;
+}
+
+}

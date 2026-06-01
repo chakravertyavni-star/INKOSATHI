@@ -1,0 +1,470 @@
+/* PAGE */
+
+.tour-features{
+  background:#05070c;
+  padding:70px 7% 95px;
+}
+
+/* CENTER CONTENT */
+
+.tour-middle{
+  max-width:1050px;
+  margin:0 auto;
+  text-align:center;
+}
+
+/* TEXT */
+
+.tour-middle p{
+  color:#cfd6e2;
+
+  font-size:
+  clamp(1rem,1vw,2rem);
+
+  line-height:1.9;
+
+  max-width:1100px;
+  margin:auto;
+}
+
+.tour-middle strong{
+  color:white;
+  font-weight:700;
+}
+
+/* DESTINATION SECTION */
+
+.travel-showcase{
+  margin-top:85px;
+}
+
+.travel-head{
+  text-align:center;
+  margin-bottom:45px;
+}
+
+.travel-head h2{
+  color:#ffffff;
+
+  font-size:
+  clamp(1.3rem,2vw,1.9rem);
+
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+.travel-head p{
+  color:#9aa4b5;
+
+  font-size:.95rem;
+  line-height:1.8;
+}
+
+/* GRID */
+
+.travel-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(4,1fr);
+
+  gap:28px;
+}
+
+/* CARD */
+
+.travel-card{
+    margin-bottom: 10px;
+  background:#0c1018;
+
+  border:
+  1px solid
+  rgba(255,255,255,.06);
+
+  border-radius:26px;
+
+  overflow:hidden;
+
+  transition:.35s;
+
+  box-shadow:
+  0 10px 30px
+  rgba(0,0,0,.28);
+}
+
+.travel-card:hover{
+  transform:
+  translateY(-8px);
+
+  border-color:
+  rgba(182,138,85,.35);
+
+  box-shadow:
+  0 18px 45px
+  rgba(182,138,85,.12);
+}
+
+/* IMAGE */
+
+.travel-card img{
+  width:100%;
+  height:240px;
+
+  object-fit:cover;
+  display:block;
+}
+
+/* TITLE */
+
+.travel-card h3{
+  color:#f3f5f7;
+
+  text-align:center;
+
+  font-size:1rem;
+  font-weight:500;
+
+  padding:18px 10px 20px;
+}
+
+
+/* PLANNER */
+
+.trip-planner{
+  position:relative;
+
+  min-height:92vh;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:90px 7%;
+
+  background:
+  linear-gradient(
+    rgba(5,7,12,.52),
+    rgba(5,7,12,.62)
+  ),
+  url("/dest.jpg");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+  overflow:hidden;
+}
+
+/* SOFT BLUR */
+
+.trip-planner::before{
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  backdrop-filter:
+  blur(3px);
+
+  background:
+  rgba(0,0,0,.10);
+}
+
+/* CONTENT */
+
+.planner-content{
+    
+  position:relative;
+  z-index:2;
+
+  text-align:center;
+  max-width:900px;
+}
+
+/* MINI */
+
+.planner-mini{
+  display:block;
+
+  color:#c49a63;
+
+  letter-spacing:5px;
+  font-size:.72rem;
+
+  margin-bottom:14px;
+}
+
+/* TITLE */
+
+.planner-content h2{
+  color:white;
+
+  font-size:
+  clamp(1.55rem,2vw,2.2rem);
+
+  font-weight:600;
+
+  margin-bottom:12px;
+
+  text-shadow:
+  0 4px 18px
+  rgba(0,0,0,.22);
+}
+
+/* TEXT */
+
+.planner-content p{
+  color:#d8dde7;
+
+  font-size:.92rem;
+  line-height:1.8;
+
+  max-width:650px;
+  margin:0 auto 34px;
+}
+
+/* GLASS CARD */
+
+.planner-card{
+  background:
+  rgba(255,255,255,.10);
+
+  backdrop-filter:
+  blur(18px);
+
+  border:
+  1px solid
+  rgba(255,255,255,.16);
+
+  border-radius:28px;
+
+  padding:28px;
+
+  box-shadow:
+  0 22px 45px
+  rgba(0,0,0,.22);
+
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+
+  gap:18px;
+}
+
+/* SELECT */
+/* SELECT */
+
+.planner-card select{
+  width:280px;
+
+  background:
+  rgba(10,12,18,.72);
+
+  border:
+  1px solid
+  rgba(255,255,255,.14);
+
+  border-radius:16px;
+
+  padding:15px 18px;
+
+  color:#f3f4f6;
+  font-size:.9rem;
+
+  outline:none;
+  cursor:pointer;
+
+  backdrop-filter:blur(12px);
+
+  box-shadow:
+  0 8px 22px
+  rgba(0,0,0,.22);
+
+  appearance:none;
+}
+
+/* DROPDOWN LIST */
+
+.planner-card select option{
+  background:#0b0f17;
+  color:#f4f4f4;
+
+  padding:12px;
+}
+
+/* HOVER + FOCUS */
+
+.planner-card select:hover,
+.planner-card select:focus{
+  border-color:
+  rgba(196,154,99,.45);
+
+  box-shadow:
+  0 0 0 2px
+  rgba(196,154,99,.12);
+}
+
+/* BUTTONS */
+
+.planner-btns{
+  width:100%;
+
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+
+  gap:14px;
+  margin-top:6px;
+}
+
+.planner-btns button{
+  border:none;
+  cursor:pointer;
+
+  border-radius:14px;
+
+  padding:14px 24px;
+
+  font-size:.88rem;
+  font-weight:500;
+
+  transition:.3s;
+}
+
+.plan-btn{
+  background:#e6b14d;
+  color:#111;
+}
+
+.wa-btn{
+  background:#19b95a;
+  color:white;
+}
+
+.view-btn{
+  background:#0f5db8;
+  color:white;
+}
+
+.planner-btns button:hover{
+  transform:
+  translateY(-3px);
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+.trip-planner{
+  min-height:auto;
+  padding:85px 6%;
+}
+
+.planner-card{
+  padding:24px;
+}
+
+.planner-card select{
+  width:100%;
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:650px){
+
+.trip-planner{
+  padding:75px 5%;
+}
+
+.planner-mini{
+  font-size:.66rem;
+  letter-spacing:4px;
+}
+
+.planner-content h2{
+  font-size:1.45rem;
+}
+
+.planner-content p{
+  font-size:.86rem;
+}
+
+.planner-card{
+  border-radius:24px;
+  padding:20px;
+}
+
+.planner-card select{
+  font-size:.86rem;
+  padding:14px;
+}
+
+.planner-btns{
+  gap:12px;
+}
+
+.planner-btns button{
+  width:100%;
+  font-size:.85rem;
+}
+
+}
+
+/* TABLET */
+
+@media(max-width:1000px){
+
+.travel-grid{
+  grid-template-columns:
+  repeat(2,1fr);
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:650px){
+
+.travel-showcase{
+  margin-top:65px;
+}
+
+.travel-head h2{
+  font-size:1.3rem;
+}
+
+.travel-head p{
+  font-size:.88rem;
+}
+
+.travel-grid{
+  grid-template-columns:1fr;
+  gap:22px;
+}
+
+.travel-card img{
+  height:210px;
+}
+
+.travel-card h3{
+  font-size:.95rem;
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:650px){
+
+.tour-features{
+  padding:55px 5% 75px;
+}
+
+.tour-middle p{
+  font-size:1rem;
+  line-height:1.8;
+}
+
+}

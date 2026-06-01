@@ -1,6 +1,7 @@
 import "../styles/Navbar.css";
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
 
@@ -26,13 +27,46 @@ export default function Navbar() {
       {/* DESKTOP */}
 
       <ul className="nav-links">
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Korean Language</li>
-        <li>Consultancy</li>
-        <li>Tour & Travel</li>
+         <li>
+          <Link
+            to="/"
+            className="nav-link"
+          >
+            Home
+          </Link>
+        </li>
+
+        <li>
+        <Link
+          to="/korean-language"
+          className="nav-link"
+        >
+          Korean Language
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          to="/consultancy"
+          className="nav-link"
+        >
+          Consultancy
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          to="/TourTravel"
+          className="nav-link"
+        >
+           Tour & Travel
+        </Link>
+      </li>
+
+    
         <li>Korean Products</li>
         <li>Contact</li>
+        <li>About Us</li>
       </ul>
 
       <div className="nav-right">
@@ -68,13 +102,47 @@ export default function Navbar() {
         }
       >
 
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Korean Language</li>
-        <li>Consultancy</li>
-        <li>Tour & Travel</li>
+
+        <li>
+          <Link
+            to="/"
+            className="nav-link"
+          >
+            Home
+          </Link>
+        </li>
+
+        
+         <li>
+          <Link
+            to="/korean-language"
+            className="nav-link"
+          >
+            Korean Language
+          </Link>
+        </li>
+
+        <li>
+          <Link
+            to="/consultancy"
+            className="nav-link"
+          >
+             Consultancy
+          </Link>
+        </li>
+
+         <li>
+        <Link
+          to="/TourTravel"
+          className="nav-link"
+        >
+           Tour & Travel
+        </Link>
+      </li>
+      
         <li>Korean Products</li>
         <li>Contact</li>
+        <li>About Us</li>
 
         <button className="mobile-btn">
           Connect

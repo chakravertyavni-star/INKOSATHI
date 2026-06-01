@@ -1,0 +1,219 @@
+.consult-hero{
+  position:relative;
+  min-height:88vh;
+  overflow:hidden;
+
+  display:flex;
+  align-items:center;
+
+  padding:120px 7% 90px;
+
+  background:
+  url("/office.jpg");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+/* OVERLAY */
+
+.consult-overlay{
+  position:absolute;
+  inset:0;
+
+  background:
+  linear-gradient(
+    90deg,
+    rgba(0,0,0,.68) 0%,
+    rgba(0,0,0,.55) 32%,
+    rgba(0,0,0,.32) 58%,
+    rgba(0,0,0,.22) 100%
+  );
+
+  z-index:1;
+}
+
+/* CONTENT */
+
+.consult-content{
+  position:relative;
+  z-index:2;
+
+  width:100%;
+  max-width:760px;
+
+  text-align:left;
+}
+
+/* TAG */
+
+.consult-tag{
+  color:#d8b071;
+
+  letter-spacing:7px;
+  text-transform:uppercase;
+
+  font-size:.82rem;
+  margin-bottom:24px;
+}
+
+/* TITLE */
+
+.consult-title{
+  color:#fff;
+  font-weight:800;
+
+  line-height:1.06;
+
+  font-size:
+  clamp(2.0rem,3vw,4.4rem);
+
+  margin-bottom:22px;
+}
+
+/* SUB */
+
+.consult-sub{
+  color:#ffffff;
+  font-size:1.4rem;
+  font-weight:500;
+}
+
+
+/* INFO SECTION */
+
+.consult-info{
+     background:
+  linear-gradient(
+    180deg,
+    #f7f3ee 0%,
+    #f3eee8 50%,
+    #f7f3ee 100%
+  );
+
+  padding:70px 7%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+}
+
+.consult-para{
+  max-width:1150px;
+
+  color:#243248;
+  font-size:1.12rem;
+  line-height:1.95;
+
+  margin:0 auto;
+}
+
+.consult-para strong{
+  color:#18263d;
+  font-weight:700;
+}
+
+/* MOBILE */
+
+@media(max-width:650px){
+
+.consult-info{
+  padding:50px 6%;
+}
+
+.consult-para{
+  font-size:.95rem;
+  line-height:1.9;
+}
+
+}
+
+/* LAPTOP */
+
+@media(max-width:1200px){
+
+.consult-title{
+  font-size:
+  clamp(2.2rem,4.8vw,4rem);
+}
+
+.consult-sub{
+  font-size:1.5rem;
+}
+
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+.consult-hero{
+  min-height:78vh;
+  padding:115px 6% 80px;
+}
+
+.consult-content{
+  max-width:620px;
+}
+
+.consult-tag{
+  font-size:.74rem;
+  letter-spacing:5px;
+}
+
+.consult-title{
+  font-size:
+  clamp(2rem,6vw,3.5rem);
+
+  line-height:1.08;
+}
+
+.consult-sub{
+  font-size:1.25rem;
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:650px){
+
+.consult-hero{
+  min-height:72vh;
+  padding:105px 5% 70px;
+}
+
+.consult-content{
+  max-width:100%;
+}
+
+.consult-tag{
+  font-size:.66rem;
+  letter-spacing:4px;
+}
+
+.consult-title{
+  font-size:
+  clamp(1.75rem,8vw,2.6rem);
+
+  line-height:1.1;
+}
+
+.consult-sub{
+  font-size:1rem;
+}
+
+.consult-overlay{
+  background:
+  linear-gradient(
+    90deg,
+    rgba(0,0,0,.78) 0%,
+    rgba(0,0,0,.55) 45%,
+    rgba(0,0,0,.35) 100%
+  );
+}
+
+}

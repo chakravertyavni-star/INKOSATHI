@@ -193,6 +193,11 @@
   cursor:pointer;
 }
 
+.nav-link{
+  color:inherit;
+  text-decoration:none;
+}
+
 /* MOBILE DROPDOWN */
 
 .mobile-menu{
