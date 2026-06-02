@@ -127,7 +127,323 @@ export default function TourFeatures() {
 
     </section>
 
-    </section>
+
+    {/* DEALS SECTION */}
+
+  <section className="travel-deals">
+
+    <div className="deals-head">
+
+      <span>PREMIUM DESTINATIONS</span>
+
+      <h2>
+        Deals You Can't Miss
+      </h2>
+
+      <p>
+        Travel beyond boundaries with incredible savings
+      </p>
+
+    </div>
+
+    <div className="deals-grid">
+
+      <div className="deal-card">
+        <img src="/taj.jpg" alt="" />
+
+        <div className="deal-overlay">
+          <h3>TAJ MAHAL</h3>
+          <p>● AGRA, IN</p>
+        </div>
+      </div>
+
+      <div className="deal-card">
+        <img src="/hawamahal.jpg" alt="" />
+
+        <div className="deal-overlay">
+          <h3>HAWA MAHAL</h3>
+          <p>● JAIPUR, IN</p>
+        </div>
+      </div>
+
+      <div className="deal-card">
+        <img src="/redfort.jpg" alt="" />
+
+        <div className="deal-overlay">
+          <h3>RED FORT</h3>
+          <p>● DELHI, IN</p>
+        </div>
+      </div>
+
+      <div className="deal-card">
+        <img src="/seon.jpg" alt="" />
+
+        <div className="deal-overlay">
+          <h3>SEONGSAN ILCHULBONG</h3>
+          <p>● JEJU ISLAND, KR</p>
+        </div>
+      </div>
+
+      <div className="deal-card">
+        <img src="/tower.jpg" alt="" />
+
+        <div className="deal-overlay">
+          <h3>N SEOUL TOWER</h3>
+          <p>● SEOUL, KR</p>
+        </div>
+      </div>
+
+      <div className="deal-card">
+        <img src="/baga.jpg" alt="" />
+
+        <div className="deal-overlay">
+          <h3>BAGA BEACH</h3>
+          <p>● GOA, IN</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  {/* SERVICES */}
+
+<section className="travel-services">
+
+  <div className="service-head">
+
+    <span>PREMIUM SUPPORT</span>
+
+    <h2>
+      Travel & Cultural Exchange Services
+    </h2>
+
+    <p>
+      Whether you are traveling for education,
+      tourism, business, or cultural exploration —
+      we ensure your journey is smooth,
+      comfortable, and meaningful.
+    </p>
+
+  </div>
+
+  <div className="service-grid">
+
+    <div className="service-box blue-box">
+      <div className="service-glow"></div>
+      <span>✈</span>
+      <h3>Flight Booking & Travel Coordination</h3>
+
+      <ul>
+        <li>India ↔ Korea routes</li>
+        <li>Best airfare options</li>
+        <li>Student group support</li>
+      </ul>
+    </div>
+
+    <div className="service-box gold-box">
+      <div className="service-glow"></div>
+      <span>🏨</span>
+      <h3>Hotel Reservations & Accommodation</h3>
+
+      <ul>
+        <li>Hotels & apartments</li>
+        <li>Corporate lodging</li>
+        <li>Pickup included</li>
+      </ul>
+    </div>
+
+    <div className="service-box purple-box">
+      <div className="service-glow"></div>
+      <span>🚘</span>
+      <h3>Chauffeur & Ground Transport</h3>
+
+      <ul>
+        <li>Airport pickup</li>
+        <li>City travel</li>
+        <li>Executive transport</li>
+      </ul>
+    </div>
+
+    <div className="service-box red-box">
+      <div className="service-glow"></div>
+      <span>🌏</span>
+      <h3>Customized Tour Packages</h3>
+
+      <ul>
+        <li>Cultural tours</li>
+        <li>Adventure retreats</li>
+        <li>Educational trips</li>
+      </ul>
+    </div>
+
+    <div className="service-box cyan-box">
+      <div className="service-glow"></div>
+      <span>🎓</span>
+      <h3>Educational & Cultural Exchange</h3>
+
+      <ul>
+        <li>University exchange</li>
+        <li>Cultural immersion</li>
+        <li>Academic travel</li>
+      </ul>
+    </div>
+
+    <div className="service-box silver-box">
+      <div className="service-glow"></div>
+      <span>🏢</span>
+      <h3>Corporate & Delegation Travel</h3>
+
+      <ul>
+        <li>MICE events</li>
+        <li>Visa support</li>
+        <li>VIP logistics</li>
+      </ul>
+    </div>
+
+    <div className="service-box pink-box">
+      <div className="service-glow"></div>
+      <span>🎎</span>
+      <h3>Thematic & Cultural Tourism</h3>
+
+      <ul>
+        <li>Heritage trails</li>
+        <li>K-Culture tours</li>
+        <li>Festival tours</li>
+      </ul>
+    </div>
+
+    <div className="service-box green-box">
+      <div className="service-glow"></div>
+      <span>📑</span>
+      <h3>Visa & Documentation</h3>
+
+      <ul>
+        <li>Tourist visas</li>
+        <li>Attestation</li>
+        <li>Travel insurance</li>
+      </ul>
+    </div>
+
+  </div>
+
+  </section>
+
+  {/* WHY CHOOSE */}
+
+<section className="travel-why">
+
+  <div className="why-head">
+
+    <span>WHY US</span>
+
+    <h2>
+      Why Choose Inkosathi Global Connect
+      Tours & Travels
+    </h2>
+
+    <p>
+      Experience the perfect blend of comfort,
+      culture, and connection — all backed by
+      expertise and care.
+    </p>
+
+  </div>
+
+  <div className="why-travel-grid">
+
+    <div className="why-travel-card">
+      <div className="why-icon">🌏</div>
+      <h3>
+        Deep Expertise in India–Korea
+        Travel & Culture
+      </h3>
+
+      <p>
+        Our strong cultural and logistical
+        networks across both nations ensure
+        a seamless travel experience.
+      </p>
+    </div>
+
+    <div className="why-travel-card">
+      <div className="why-icon">✈</div>
+      <h3>
+        End-to-End Service
+      </h3>
+
+      <p>
+        From flight booking to
+        accommodation, visa, and logistics —
+        we handle every detail for you.
+      </p>
+    </div>
+
+    <div className="why-travel-card">
+      <div className="why-icon">🎓</div>
+      <h3>
+        Academic & Cultural
+        Partnerships
+      </h3>
+
+      <p>
+        We collaborate with universities
+        and institutions to offer authentic
+        intercultural experiences.
+      </p>
+    </div>
+
+    <div className="why-travel-card">
+      <div className="why-icon">🎧</div>
+      <h3>
+        24×7 Multilingual Support
+      </h3>
+
+      <p>
+        Our global team provides
+        round-the-clock assistance in
+        English, Korean, and local languages.
+      </p>
+    </div>
+
+    <div className="why-travel-card">
+      <div className="why-icon">💎</div>
+      <h3>
+        Transparent Pricing
+      </h3>
+
+      <p>
+        No hidden fees — just honest
+        pricing and customized plans
+        for every traveler.
+      </p>
+    </div>
+
+    <div className="why-travel-card">
+      <div className="why-icon">🏅</div>
+      <h3>
+        Curated by Certified Experts
+      </h3>
+
+      <p>
+        Our certified travel planners
+        and cultural experts ensure
+        every journey is meaningful and safe.
+      </p>
+    </div>
+
+  </div>
+
+  </section>
+
+    
+
+
+
+  
+  
+  
+  </section>
 
 
 
