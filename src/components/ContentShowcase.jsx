@@ -1,43 +1,49 @@
 import "../styles/ContentShowcase.css";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 export default function ContentShowcase() {
 
-        const sections = [
+ const sections = [
 
   {
-    image:"/content.png",
-    title:"Korean Language",
-    text:"Explore Korean culture, language, and immersive programs.",
-    button:"Learn Korean",
+    image: "/content.png",
+    title: "Korean Language",
+    text: "Explore Korean culture, language, and immersive programs.",
+    button: "Learn Korean",
+    path: "/korean-language",
   },
 
   {
-    image:"/content1.png",
-    title:"Consultancy",
-    text:"Get expert advice for education, careers, and international opportunities.",
-    button:"Get Consultancy",
+    image: "/content1.png",
+    title: "Consultancy",
+    text: "Get expert advice for education, careers, and international opportunities.",
+    button: "Get Consultancy",
+    path: "/consultancy",
   },
 
   {
-    image:"/content2.png",
-    title:"Tour & Travel",
-    text:"Discover exciting destinations with guided travel packages.",
-    button:"Plan Your Trip",
+    image: "/content2.png",
+    title: "Tour & Travel",
+    text: "Discover exciting destinations with guided travel packages.",
+    button: "Plan Your Trip",
+    path: "/TourTravel",
   },
 
   {
-    image:"/content3.png",
-    title:"K-Products",
-    text:"Explore curated Korean products and premium lifestyle experiences.",
-    button:"Explore Products",
+    image: "/content3.png",
+    title: "K-Products",
+    text: "Explore curated Korean products and premium lifestyle experiences.",
+    button: "Explore Products",
+    path: "/k-products",
   },
 
   {
-    image:"/content4.png",
-    title:"About Us",
-    text:"We are committed to bringing global learning and cultural exchange opportunities.",
-    button:"Learn More",
+    image: "/content4.png",
+    title: "About Us",
+    text: "We are committed to bringing global learning and cultural exchange opportunities.",
+    button: "Learn More",
+    path: "/about",
   },
 
 ];
@@ -110,9 +116,12 @@ export default function ContentShowcase() {
               {item.text}
             </p>
 
-            <button>
+            <Link
+              to={item.path}
+              className="showcase-btn"
+            >
               {item.button}
-            </button>
+            </Link>
 
           </div>
 

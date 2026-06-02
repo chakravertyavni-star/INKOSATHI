@@ -133,7 +133,7 @@ export default function Hero() {
          <div className="hero-buttons">
 
         <button className="hero-btn">
-            Explore More
+            Explore Courses
         </button>
 
         <button className="hero-btn secondary">

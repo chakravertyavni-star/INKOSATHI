@@ -49,7 +49,9 @@ export default function KoreanHero() {
             delivers structured Korean courses from beginner to advanced.
             Through our partnership with
             <strong>
+              <p>
               Sunchon National University, South Korea,
+              </p>
             </strong>
             students receive internationally recognized training.
           </p>

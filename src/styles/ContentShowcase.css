@@ -74,7 +74,7 @@
   margin-bottom:35px;
 }
 
-.showcase-content button{
+.showcase-btn{
   border:none;
 
   background:
@@ -99,10 +99,16 @@
   transition:.35s;
 }
 
-.showcase-content button:hover{
+ 
+ 
+
+.showcase-btn:hover{
   transform:
-  translateY(-3px);
+  translateY(-30px);
 }
+
+
+
 
 /* TABLET */
 

@@ -65,7 +65,18 @@ export default function Navbar() {
 
     
         <li>Korean Products</li>
-        <li>Contact</li>
+
+
+         <li>
+        <Link
+          to="/contact"
+          className="nav-link"
+        >
+           Contact
+        </Link>
+      </li>
+
+
         <li>About Us</li>
       </ul>
 
@@ -139,9 +150,18 @@ export default function Navbar() {
            Tour & Travel
         </Link>
       </li>
-      
+
         <li>Korean Products</li>
-        <li>Contact</li>
+        <li>
+        <Link
+          to="/contact"
+          className="nav-link"
+        >
+           Tour & Travel
+        </Link>
+      </li>
+
+
         <li>About Us</li>
 
         <button className="mobile-btn">
