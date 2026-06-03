@@ -1,375 +1,323 @@
- .khero{
-  position:relative;
+/* PAGE */
+
+.kproducts-page{
+
   min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:
+  110px 7% 80px;
+
+  position:relative;
   overflow:hidden;
 
-  padding:130px 7% 90px;
+  /* KOREAN LUXURY BACKGROUND */
 
   background:
   linear-gradient(
-    90deg,
-    rgba(247,243,238,.97) 0%,
-    rgba(247,243,238,.92) 24%,
-    rgba(247,243,238,.70) 40%,
-    rgba(247,243,238,.28) 56%,
-    rgba(247,243,238,.06) 70%,
-    transparent 100%
-  ),
-  url("/korean-hero.jpg");
-
-  background-repeat:no-repeat;
-  background-size:95%;
-  background-position:right top;
+    135deg,
+    #e7ebf3 0%,
+    #efe7f1 28%,
+    #e4e8f0 60%,
+    #f4edf2 100%
+  );
 }
 
-/* PETALS */
+/* SOFT KOREAN BLOOM */
 
-.khero-petals{
+.kproducts-page::before{
+
+  content:"";
+
   position:absolute;
-  top:0;
-  left:0;
-  bottom:0;
+  top:-120px;
+  left:-90px;
 
-  width:46%;
+  width:380px;
+  height:380px;
 
   background:
-  url("/petals.png")
-  no-repeat
-  top left;
+  radial-gradient(
+    circle,
+    rgba(255,184,210,.18),
+    transparent 72%
+  );
 
-  background-size:320px;
-
-  opacity:.22;
-
-  pointer-events:none;
-  z-index:3;
+  filter:blur(10px);
 }
 
-/* WRAP */
+.kproducts-page::after{
 
-.khero-wrap{
+  content:"";
+
+  position:absolute;
+  right:-120px;
+  bottom:-90px;
+
+  width:340px;
+  height:340px;
+
+  background:
+  radial-gradient(
+    circle,
+    rgba(166,189,255,.16),
+    transparent 72%
+  );
+
+  filter:blur(10px);
+}
+
+/* EXTRA KOREAN SOFT LIGHT */
+
+.kproducts-page .soft-light{
+
+  position:absolute;
+  inset:0;
+
+  background:
+  radial-gradient(
+    circle at 50% 15%,
+    rgba(255,255,255,.35),
+    transparent 45%
+  );
+
+  pointer-events:none;
+}
+
+/* CONTENT */
+
+.kproducts-content{
+
   position:relative;
-  z-index:5;
+  z-index:2;
 
-  width:100%;
-  max-width:1400px;
+  text-align:center;
+
+  max-width:760px;
+}
+
+/* LABEL */
+
+.kproducts-content span{
+
+  color:#c98297;
+
+  letter-spacing:5px;
+
+  font-size:.72rem;
+  font-weight:600;
+}
+
+/* MINIMAL TITLE */
+
+.kproducts-content h1{
+
+  color:#1557aa;
+
+  font-size:
+  clamp(2rem,3vw,3rem);
+
+  font-weight:700;
+
+  margin:
+  14px 0 18px;
+
+  letter-spacing:-1px;
+}
+
+/* TEXT */
+
+.kproducts-content p{
+
+  color:#616a7d;
+
+  font-size:.95rem;
+
+  line-height:1.9;
+
+  max-width:560px;
+
   margin:auto;
 }
 
-/* TOP */
+/* GIF */
 
-.khero-top{
-  display:flex;
-  align-items:flex-start;
+.k-animation{
+
+  width:220px;
+
+  margin:
+  38px auto 28px;
+
+  overflow:hidden;
 }
 
-.khero-left{
-  max-width:520px;
-}
+.k-animation img{
 
-/* TAG */
-
-.khero-tag{
-  color:#b58a53;
-  letter-spacing:7px;
-  font-size:.82rem;
-  text-transform:uppercase;
-  margin-bottom:22px;
-}
-
-/* TITLE */
-
-.khero-title{
-  font-family:Georgia,serif;
-  font-weight:500;
-  color:#07162d;
-
-  font-size:
-  clamp(3rem,4.4vw,5rem);
-
-  line-height:1.02;
-  margin-bottom:18px;
-}
-
-.gold-text{
-  display:block;
-  margin-top:8px;
-
-  color:#b58a53;
-  font-size:.64em;
-  line-height:1.06;
-}
-
-/* SUB */
-
-.khero-sub{
-  color:#b58a53;
-  font-size:1.25rem;
-  font-weight:500;
-}
-
-/* BOTTOM CENTER */
-
-.khero-bottom{
   width:100%;
 
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
+  display:block;
 
-  text-align:center;
+  object-fit:contain;
 
-  margin-top:80px;
+  filter:
+  drop-shadow(
+    0 18px 35px
+    rgba(94,121,196,.14)
+  );
+
+  animation:
+  floatAnim 4s ease-in-out infinite;
 }
 
-/* DESC */
+/* FLOAT */
 
-.khero-desc{
-  color:#46536a;
-  line-height:1.9;
-  font-size:1.05rem;
+@keyframes floatAnim{
 
-  max-width:900px;
-  margin:0 auto;
+  0%{
+    transform:
+    translateY(0);
+  }
+
+  50%{
+    transform:
+    translateY(-8px);
+  }
+
+  100%{
+    transform:
+    translateY(0);
+  }
 }
 
-.khero-desc strong{
-  color:#101828;
-}
+/* BUTTON */
 
-/* ICONS */
+.kproducts-content button{
 
-.khero-icons{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-wrap:wrap;
-
-  gap:42px;
-  margin-top:42px;
-}
-
-.khero-ico{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  text-align:center;
-}
-
-.khero-ico span{
-  font-size:1.55rem;
-  margin-bottom:8px;
-}
-
-.khero-ico p{
-  font-size:.92rem;
-  color:#18263d;
-  line-height:1.45;
-}
-
-/* LAPTOP */
-
-@media(max-width:1200px){
-
-.khero{
-  background-size:115%;
-}
-
-}
-
- 
-/* TABLET */
-
-@media(max-width:950px){
-
-.khero{
-  min-height:auto;
+  border:none;
 
   padding:
-  115px 6%
-  75px;
+  14px 34px;
+
+  border-radius:40px;
 
   background:
   linear-gradient(
-    90deg,
-    rgba(247,243,238,.98) 0%,
-    rgba(247,243,238,.94) 32%,
-    rgba(247,243,238,.72) 52%,
-    rgba(247,243,238,.25) 72%,
-    transparent 100%
-  ),
-  url("/korean-hero.jpg");
+    135deg,
+    #1455a7,
+    #0f4b96
+  );
 
-  background-repeat:no-repeat;
-  background-size:150%;
-  background-position:right top;
+  color:white;
+
+  font-size:.92rem;
+  font-weight:600;
+
+  cursor:pointer;
+
+  box-shadow:
+  0 12px 30px
+  rgba(21,85,167,.22);
+
+  transition:.35s;
 }
 
-.khero-petals{
-  width:100%;
-  background-size:220px;
-  opacity:.16;
+.kproducts-content button:hover{
+
+  transform:
+  translateY(-3px);
+
+  box-shadow:
+  0 16px 34px
+  rgba(21,85,167,.30);
 }
 
-.khero-left{
-  max-width:100%;
+/* TABLET */
+
+@media(max-width:900px){
+
+.kproducts-page{
+
+  padding:
+  100px 6% 70px;
 }
 
-/* TEXT GLOW */
-
-.khero-title{
-  font-size:
-  clamp(2.4rem,8vw,4rem);
-
-  text-shadow:
-  0 2px 18px rgba(255,255,255,.72),
-  0 0 30px rgba(255,255,255,.35);
-}
-
-.gold-text{
-  color:#b08248;
-
-  text-shadow:
-  0 2px 14px rgba(255,255,255,.95),
-  0 1px 4px rgba(0,0,0,.10);
-}
-
-.khero-sub{
-  font-size:1.05rem;
-
-  text-shadow:
-  0 2px 12px rgba(255,255,255,.65);
-}
-
-.khero-desc{
-  font-size:.98rem;
-  line-height:1.85;
+.k-animation{
+  width:200px;
 }
 
 }
-
-
 
 /* MOBILE */
 
-@media(max-width:650px){
+@media(max-width:768px){
 
-.khero{
+.kproducts-page{
+
   padding:
-  95px 5%
-  65px;
-
-  /* stronger text protection */
-
-  background:
-  linear-gradient(
-    90deg,
-    rgba(247,243,238,.995) 0%,
-    rgba(247,243,238,.985) 42%,
-    rgba(247,243,238,.90) 58%,
-    rgba(247,243,238,.55) 72%,
-    rgba(247,243,238,.20) 86%,
-    transparent 100%
-  ),
-  url("/korean-hero.jpg");
-
-  background-repeat:no-repeat;
-  background-size:190%;
-  background-position:72% top;
+  95px 6% 65px;
 }
 
-/* PETALS */
-
-.khero-petals{
-  background-size:180px;
-  opacity:.18;
-}
-
-/* TAG FIX */
-
-.khero-tag{
-  font-size:.68rem;
-  letter-spacing:4px;
-
-  color:#b58a53;
-
-  /* visible */
-
-  text-shadow:
-  0 2px 10px rgba(255,255,255,.95);
-
-  margin-bottom:14px;
-}
-
-/* TITLE FIX */
-
-.khero-title{
+.kproducts-content h1{
 
   font-size:
-  clamp(1.55rem,7vw,2.35rem);
-
-  line-height:1.04;
-
-  max-width:235px;
-
-  margin-bottom:12px;
-
-  color:#07162d;
-
-  /* luxury glow */
-
-  text-shadow:
-  0 2px 18px rgba(255,255,255,.92),
-  0 0 32px rgba(255,255,255,.42);
+  clamp(1.7rem,7vw,2.3rem);
 }
 
-/* GOLD TEXT FIX */
+.kproducts-content p{
 
-.gold-text{
-
-  font-size:.60em;
-
-  color:#b08248;
-
-  line-height:1.05;
-
-  text-shadow:
-  0 2px 14px rgba(255,255,255,.98),
-  0 0 22px rgba(255,255,255,.55);
-
-  max-width:230px;
-}
-
-/* SUB */
-
-.khero-sub{
-  font-size:.86rem;
-  margin-bottom:18px;
-
-  text-shadow:
-  0 2px 10px rgba(255,255,255,.82);
-}
-
-/* DESC */
-
-.khero-desc{
-  font-size:.88rem;
+  font-size:.9rem;
   line-height:1.8;
 }
 
-/* ICONS */
+.k-animation{
 
-.khero-icons{
-  gap:20px;
+  width:180px;
+
+  margin:
+  30px auto 22px;
+
+  overflow:hidden;
 }
 
-.khero-ico span{
-  font-size:1.2rem;
+/* HIDE 10PX BOTTOM */
+
+.k-animation img{
+
+  transform:
+  translateY(-10px);
+
+  animation:
+  floatMobile 4s ease-in-out infinite;
 }
 
-.khero-ico p{
-  font-size:.8rem;
+@keyframes floatMobile{
+
+  0%{
+    transform:
+    translateY(-10px);
+  }
+
+  50%{
+    transform:
+    translateY(-16px);
+  }
+
+  100%{
+    transform:
+    translateY(-10px);
+  }
+}
+
+.kproducts-content button{
+
+  padding:
+  13px 28px;
+
+  font-size:.88rem;
 }
 
 }

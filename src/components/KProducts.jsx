@@ -1,106 +1,60 @@
-import "../styles/KProducts.css";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import { motion } from "framer-motion";
+import "../styles/KProducts.css";
 
 export default function KProducts(){
 
-return(
+  return(
 
-<div className="kproducts-page">
+    <>
 
-<Navbar/>
+      <Navbar />
 
-<section className="kproducts-hero">
+      <section className="kproducts-page">
 
-<div className="k-soft1"></div>
-<div className="k-soft2"></div>
+        <div className="kproducts-content">
 
-<div className="k-center">
+           <div className="k-tagline">
 
-<span>
-K-BEAUTY • K-LIFESTYLE • PREMIUM
-</span>
+            <span>K-BEAUTY</span>
 
-<h1>
-K-Products
-</h1>
+            <div className="dot"></div>
 
-<p>
-Discover premium Korean beauty,
-lifestyle and cultural products —
-carefully curated for India.
-</p>
+            <span>K-LIFESTYLE</span>
 
-{/* ANIMATION */}
+            <div className="dot"></div>
 
-<div className="k-animation">
+            <span>PREMIUM</span>
 
-<motion.div
-className="k-orb orb1"
-animate={{
-y:[0,-18,0]
-}}
-transition={{
-duration:4,
-repeat:Infinity
-}}
-/>
+            </div>
 
-<motion.div
-className="k-orb orb2"
-animate={{
-y:[0,18,0]
-}}
-transition={{
-duration:5,
-repeat:Infinity
-}}
-/>
+          <h1>
+            K-Products
+          </h1>
 
-<motion.div
-className="k-card"
+          <p>
+             Our K-Products page is under development. Stay tuned for amazing updates!
+          </p>
 
-animate={{
-y:[0,-10,0],
-rotate:[0,2,0]
-}}
+          {/* GIF ANIMATION */}
 
-transition={{
-duration:5,
-repeat:Infinity
-}}
->
+          <div className="k-animation">
 
-<div className="sparkle">✦</div>
+            <img
+              src="/shop.gif"
+              alt="K Products"
+            />
 
-<div className="k-icons">
-💄 ✨ 🧴
-</div>
+          </div>
 
-<h3>
-K-Beauty Experience
-</h3>
+          <button>
+            Launching Soon ✨
+          </button>
 
-<p>
-Skincare • Cosmetics • Lifestyle
-</p>
+        </div>
 
-</motion.div>
+      </section>
 
-</div>
+    </>
 
-<button className="k-btn">
-Launching Soon ✦
-</button>
-
-</div>
-
-</section>
-
-<Footer/>
-
-</div>
-
-);
+  );
 }

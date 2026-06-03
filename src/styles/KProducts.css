@@ -1,331 +1,319 @@
+/* PAGE */
+
 .kproducts-page{
 
-background:
-linear-gradient(
-135deg,
-#dfe5ef 0%,
-#d6deea 22%,
-#e6d8e9 48%,
-#d7dde8 72%,
-#cfd8e6 100%
-);
+  min-height:100vh;
 
-min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 
-position:relative;
-overflow:hidden;
+  padding:
+  120px 7% 90px;
+
+  position:relative;
+  overflow:hidden;
+
+  background:
+  linear-gradient(
+    135deg,
+    #dfe4ec 0%,
+    #ebe6ee 45%,
+    #dce2ea 100%
+  );
 }
 
-/* HERO */
-
-.kproducts-hero{
-
-position:relative;
-
-min-height:88vh;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-overflow:hidden;
-
-padding:80px 6%;
-}
-
-/* SOFT BLOBS */
-
-/* KOREAN GLOW */
-
-.k-soft1{
-
-position:absolute;
-top:-140px;
-left:-100px;
-
-width:520px;
-height:520px;
-
-border-radius:50%;
-
-background:
-radial-gradient(
-circle,
-rgba(173,139,255,.28),
-transparent 72%
-);
-
-filter:blur(35px);
-}
-
-.k-soft2{
-
-position:absolute;
-bottom:-180px;
-right:-120px;
-
-width:520px;
-height:520px;
-
-border-radius:50%;
-
-background:
-radial-gradient(
-circle,
-rgba(255,182,193,.22),
-transparent 72%
-);
-
-filter:blur(35px);
-}
-
-/* EXTRA SEOUL GLOW */
+/* SOFT KOREAN GLOW */
 
 .kproducts-page::before{
 
-content:"";
+  content:"";
 
-position:absolute;
-top:25%;
-left:40%;
+  position:absolute;
+  top:-150px;
+  left:-120px;
 
-width:380px;
-height:380px;
+  width:430px;
+  height:430px;
 
-border-radius:50%;
-
-background:
-radial-gradient(
-circle,
-rgba(110,145,220,.14),
-transparent 72%
-);
-
-filter:blur(55px);
+  background:
+  radial-gradient(
+    circle,
+    rgba(246,167,193,.18),
+    transparent 70%
+  );
 }
 
-.k-soft2{
+.kproducts-page::after{
 
-position:absolute;
-bottom:-160px;
-right:-120px;
+  content:"";
 
-width:420px;
-height:420px;
+  position:absolute;
+  bottom:-140px;
+  right:-120px;
 
-border-radius:50%;
+  width:400px;
+  height:400px;
 
-background:
-radial-gradient(
-circle,
-rgba(151,198,255,.22),
-transparent 70%
-);
+  background:
+  radial-gradient(
+    circle,
+    rgba(129,170,255,.14),
+    transparent 70%
+  );
 }
 
-/* CENTER */
+/* CONTENT */
 
-.k-center{
+.kproducts-content{
 
-position:relative;
-z-index:2;
+  position:relative;
+  z-index:2;
 
-text-align:center;
+  text-align:center;
+
+  max-width:860px;
 }
 
-.k-center span{
+/* TOP PREMIUM TAG */
 
-letter-spacing:4px;
+.k-tagline{
 
-font-size:.72rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
 
-color:#8b7cc2;
+  margin-bottom:18px;
+
+  flex-wrap:wrap;
 }
 
-.k-center h1{
+.k-tagline span{
 
-font-size:
-clamp(2rem,4vw,3rem);
-color:#0a4fa8;
+  color:#8b83c6;
 
-margin:14px 0;
+  font-size:.72rem;
+  font-weight:500;
 
-font-weight:700;
+  letter-spacing:4px;
+
+  text-transform:uppercase;
 }
 
-.k-center p{
+.k-tagline .dot{
 
-font-size:.95rem;
+  width:4px;
+  height:4px;
 
-color:#5f6b7a;
+  border-radius:50%;
 
-max-width:620px;
+  background:
+  rgba(139,131,198,.55);
+}
+.kproducts-content h1{
 
-margin:auto;
+  color:#1758ab;
 
-line-height:1.8;
+  font-size:
+  clamp(2.7rem,5vw,4rem);
+
+  font-weight:700;
+
+  margin:
+  14px 0 18px;
 }
 
-/* ANIMATION */
+.kproducts-content p{
+
+  color:#5f6777;
+
+  font-size:1rem;
+
+  line-height:1.9;
+
+  max-width:660px;
+  margin:auto;
+}
+
+/* GIF WRAP */
 
 .k-animation{
 
-position:relative;
+  width:340px;
 
-width:360px;
-height:320px;
+  margin:
+  42px auto 32px;
 
-margin:50px auto 35px;
+  position:relative;
 }
 
-.k-orb{
+/* GIF */
 
-position:absolute;
+.k-animation img{
 
-border-radius:50%;
+  width:100%;
+  display:block;
 
-filter:blur(30px);
+  object-fit:contain;
+
+  filter:
+  drop-shadow(
+    0 20px 38px
+    rgba(23,88,171,.10)
+  );
+
+  animation:
+  floatAnim 4s ease-in-out infinite;
 }
 
-.orb1{
+/* FLOAT */
 
-width:120px;
-height:120px;
+@keyframes floatAnim{
 
-left:10px;
-top:90px;
+  0%{
+    transform:
+    translateY(0);
+  }
 
-background:
-rgba(255,188,226,.55);
-}
+  50%{
+    transform:
+    translateY(-10px);
+  }
 
-.orb2{
-
-width:140px;
-height:140px;
-
-right:10px;
-top:70px;
-
-background:
-rgba(180,215,255,.55);
-}
-
-/* GLASS CARD */
-
-.k-card{
-
-position:absolute;
-inset:0;
-
-margin:auto;
-
-width:250px;
-height:250px;
-
-border-radius:38px;
-
-background:
-rgba(255,255,255,.24);
-
-backdrop-filter:
-blur(22px);
-
-border:
-1px solid
-rgba(255,255,255,.32);
-
-box-shadow:
-0 20px 45px
-rgba(66,84,122,.14);
-
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-}
-
-.sparkle{
-
-position:absolute;
-top:18px;
-right:22px;
-
-font-size:1.2rem;
-
-color:#c5a0ff;
-}
-
-.k-icons{
-
-font-size:2rem;
-
-margin-bottom:12px;
-}
-
-.k-card h3{
-
-font-size:1rem;
-
-color:#24354a;
-
-margin-bottom:8px;
-}
-
-.k-card p{
-
-font-size:.82rem;
-
-color:#6b7685;
+  100%{
+    transform:
+    translateY(0);
+  }
 }
 
 /* BUTTON */
 
-.k-btn{
+.kproducts-content button{
 
-padding:
-14px 36px;
+  border:none;
 
-border:none;
+  padding:
+  16px 44px;
 
-border-radius:45px;
+  border-radius:50px;
 
-background:#0d58ab;
+  background:
+  linear-gradient(
+    135deg,
+    #1758ab,
+    #0d4b99
+  );
 
-color:white;
+  color:white;
 
-font-size:.92rem;
-font-weight:600;
+  font-size:1rem;
+  font-weight:600;
 
-cursor:pointer;
+  cursor:pointer;
 
-box-shadow:
-0 12px 30px
-rgba(13,88,171,.22);
+  box-shadow:
+  0 14px 34px
+  rgba(23,88,171,.24);
 
-transition:.35s;
+  transition:.35s;
 }
 
-.k-btn:hover{
+.kproducts-content button:hover{
 
-transform:
-translateY(-3px);
+  transform:
+  translateY(-4px);
 
-background:#0b4c95;
+  box-shadow:
+  0 18px 42px
+  rgba(23,88,171,.34);
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+.kproducts-page{
+
+  padding:
+  110px 6% 80px;
+}
+
+.k-animation{
+  width:290px;
+}
+
 }
 
 /* MOBILE */
 
 @media(max-width:768px){
 
-.k-animation{
-width:300px;
-height:280px;
+.kproducts-page{
+
+  padding:
+  105px 6% 70px;
 }
 
-.k-card{
-width:210px;
-height:210px;
+.kproducts-content h1{
+
+  font-size:
+  clamp(2.1rem,7vw,3rem);
+}
+
+.kproducts-content p{
+
+  font-size:.95rem;
+  line-height:1.8;
+}
+
+/* GIF WRAP */
+
+.k-animation{
+
+  width:240px;
+
+  margin:
+  35px auto 28px;
+
+  overflow:hidden;
+}
+
+/* HIDE 10PX FROM BOTTOM */
+
+.k-animation img{
+
+  transform:
+  translateY(-10px);
+
+  animation:
+  floatMobile 4s ease-in-out infinite;
+}
+
+@keyframes floatMobile{
+
+  0%{
+    transform:
+    translateY(-10px);
+  }
+
+  50%{
+    transform:
+    translateY(-18px);
+  }
+
+  100%{
+    transform:
+    translateY(-10px);
+  }
+}
+
+.kproducts-content button{
+
+  padding:
+  14px 34px;
+
+  font-size:.95rem;
 }
 
 }
