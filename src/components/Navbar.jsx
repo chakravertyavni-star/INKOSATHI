@@ -63,8 +63,18 @@ export default function Navbar() {
         </Link>
       </li>
 
+
+      <li>
+        <Link
+          to="/kproducts"
+          className="nav-link"
+        >
+          Korean Products
+        </Link>
+      </li>
+
     
-        <li>Korean Products</li>
+    
 
 
          <li>
@@ -77,7 +87,17 @@ export default function Navbar() {
       </li>
 
 
-        <li>About Us</li>
+      <li>
+        <Link
+          to="/about"
+          className="nav-link"
+        >
+           About Us
+        </Link>
+      </li>
+
+
+       
       </ul>
 
       <div className="nav-right">
@@ -144,16 +164,6 @@ export default function Navbar() {
 
          <li>
         <Link
-          to="/TourTravel"
-          className="nav-link"
-        >
-           Tour & Travel
-        </Link>
-      </li>
-
-        <li>Korean Products</li>
-        <li>
-        <Link
           to="/contact"
           className="nav-link"
         >
@@ -161,8 +171,39 @@ export default function Navbar() {
         </Link>
       </li>
 
+         <li>
+        <Link
+          to="/kproducts"
+          className="nav-link"
+        >
+           <li>Korean Products</li>
+        </Link>
+      </li>
 
-        <li>About Us</li>
+
+
+      <li>
+        <Link
+          to="/contact"
+          className="nav-link"
+        >
+           Contact
+        </Link>
+      </li>
+
+        
+
+        <li>
+        <Link
+          to="/about"
+          className="nav-link"
+        >
+           About Us
+        </Link>
+      </li>
+
+
+       
 
         <button className="mobile-btn">
           Connect

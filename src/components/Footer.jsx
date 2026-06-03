@@ -1,98 +1,188 @@
 import "../styles/Footer.css";
+import { Link } from "react-router-dom";
+
 import {
-FiFacebook,
-FiInstagram,
-FiLinkedin,
-FiYoutube
+  FiFacebook,
+  FiInstagram,
+  FiLinkedin,
+  FiYoutube
 } from "react-icons/fi";
 
-export default function Footer(){
+export default function Footer() {
 
-return(
+  return (
 
-<footer className="footer">
+    <footer className="footer">
 
-<div className="footer-top">
+      <div className="footer-top">
 
-<div className="footer-brand">
+        {/* BRAND */}
 
-<img
-src="/logo.png"
-alt=""
-/>
+        <div className="footer-brand">
 
-<h3>
-Inkosathi Global Connect
-Private Limited
-</h3>
+          <div className="footer-logo-wrap">
 
-<p>
-Connecting Korea, education,
-culture, and international
-opportunities with premium
-guidance and trusted support.
-</p>
+            <img
+              src="/logo.png"
+              alt="logo"
+            />
 
-<div className="socials">
+            <h3>
+              Inkosathi Global Connect
+              <br />
+              Private Limited
+            </h3>
 
-<div><FiFacebook/></div>
-<div><FiInstagram/></div>
-<div><FiLinkedin/></div>
-<div><FiYoutube/></div>
+          </div>
 
-</div>
+          <p>
+            "We bring languages to life,
+            helping you connect with
+            people, cultures, and endless
+            opportunities. Your dreams
+            start here!"
+          </p>
 
-</div>
+          <h4 className="touch-title">
+            GET IN TOUCH
+          </h4>
 
-<div className="footer-column">
+          {/* CONTACT */}
 
-<h4>Explore</h4>
+          <div className="footer-contact">
 
-<a>About Us</a>
-<a>Korean Language</a>
-<a>Consultancy</a>
-<a>Tour & Travel</a>
-<a>Korean Products</a>
+            <p className="contact-label">
+              Call Us:
+            </p>
 
-</div>
+            <a href="tel:+918409371446">
+              +91 84093 71446
+            </a>
 
-<div className="footer-column">
+            <a href="tel:+917042611845">
+              +91 70426 11845
+            </a>
 
-<h4>Contact</h4>
+            <p className="contact-mail">
+              Mail Us:
+              <a href="mailto:connect@inkosathi.com">
+                connect@inkosathi.com
+              </a>
+            </p>
 
-<a>+91 84093 71446</a>
-<a>+91 70426 11845</a>
-<a>connect@inkosathi.com</a>
-<a>India • Korea</a>
+          </div>
 
-</div>
+          {/* SOCIALS */}
 
-<div className="footer-column">
+          <div className="socials">
 
-<h4>Partners</h4>
+            <a href="#">
+              <FiFacebook />
+            </a>
 
-<a>Sunchon University</a>
-<a>Neev Foundation</a>
-<a>Sri Vishnu Amogh</a>
-<a>Global Programs</a>
+            <a href="#">
+              <FiLinkedin />
+            </a>
 
-</div>
+            <a href="#">
+              <FiInstagram />
+            </a>
 
-</div>
+            <a href="#">
+              <FiYoutube />
+            </a>
 
-<div className="footer-line"></div>
+          </div>
 
-<div className="footer-bottom">
+        </div>
 
-<p>
-© 2026 Inkosathi Global Connect
-Private Limited.
-All Rights Reserved.
-</p>
+        {/* QUICK LINKS */}
 
-</div>
+        <div className="footer-column">
 
-</footer>
+          <h4>Quick Links</h4>
 
-);
+          <Link to="/about">
+            About Us
+          </Link>
+
+          <a>
+            Meet Our Team
+          </a>
+
+          <a>
+            FAQ
+          </a>
+
+          <a>
+            Privacy Policy
+          </a>
+
+          <a>
+            Terms & Conditions
+          </a>
+
+        </div>
+
+        {/* COURSES */}
+
+        <div className="footer-column">
+
+          <h4>Courses</h4>
+
+          <Link to="/korean-language">
+            Korean Language
+          </Link>
+
+          <a>
+            Japanese Language
+          </a>
+
+          <a>
+            French Language
+          </a>
+
+          <a>
+            German Language
+          </a>
+
+          <a>
+            Chinese Language
+          </a>
+
+        </div>
+
+        {/* TRAVEL */}
+
+        <div className="footer-column">
+
+          <h4>Travel Programs</h4>
+
+          <a>South Korea Tours</a>
+          <a>India–Korea Exchange</a>
+          <a>Study Abroad Packages</a>
+          <a>Cultural Immersion Trips</a>
+          <a>Corporate Travel</a>
+          <a>Custom Travel Planning</a>
+          <a>Visa Assistance</a>
+          <a>Travel Blog</a>
+
+        </div>
+
+      </div>
+
+      <div className="footer-line"></div>
+
+      <div className="footer-bottom">
+
+        <p>
+          © 2026 Inkosathi Global Connect
+          Private Limited.
+          All Rights Reserved.
+        </p>
+
+      </div>
+
+    </footer>
+  );
 }

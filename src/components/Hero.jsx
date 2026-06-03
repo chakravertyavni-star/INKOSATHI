@@ -4,6 +4,7 @@ import {
   HiChevronLeft,
   HiChevronRight,
 } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
 
@@ -132,14 +133,19 @@ export default function Hero() {
 
          <div className="hero-buttons">
 
-        <button className="hero-btn">
+          <Link to="/korean-language">
+          <button className="hero-btn">
             Explore Courses
-        </button>
+          </button>
+        </Link>
 
-        <button className="hero-btn secondary">
+        <Link to="/about">
+          <button className="hero-btn secondary">
             About Us
-        </button>
+          </button>
+        </Link>
 
+        
         </div>
 
         {/* DOTS */}
